@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 사용자 지원 페이지입니다. 지원 폼만 있습니다. -->
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script type='text/javascript' src='/javascripts/apply_javascript.js'></script>
+
+  <body>
+    <input type='text' id='name' placeholder="이름">
+    <input type='text' id='major' placeholder="학과">
+    <input type='text' id='student_number' placeholder="학번">
+    <input type='text' id='grade' placeholder="학년/학기">
+    <input type='text' id='phone_number' placeholder="연락처">
+    <input type='text' id='email' placeholder="이메일">
+    <input type='text' id='home' placeholder="거주지"><br>
+    <input type='radio' name='gender' value='남'>남 <!-- 성별 체크 부분입니다. -->
+    <input type='radio' name='gender' value='여'>여 &nbsp;
+    군필 : <input type='checkbox' id='milcheck'><br> <!-- 군필여부 체크 부분입니다. -->
+    <textarea rows='10' cols='100' id='apply_reason' placeholder="지원 동기"></textarea>
+    <textarea rows='10' cols='100' id='project' placeholder="프로젝트 경험"></textarea>
+    <textarea rows='10' cols='100' id='want_service' placeholder="만들고 싶은 서비스"></textarea>
+    <button id='applyButton'>지원하기</button>
+  </body>
+</html>

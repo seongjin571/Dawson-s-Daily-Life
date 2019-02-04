@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="/javascripts/project_Login.js"></script>
+	<style>
+
+	body{
+		margin: 0;
+		padding: 0;
+		width : 100%;
+		height :100%;
+		overflow: hidden;
+	}
+	video{
+		position :absolute;
+		width : 100%;
+		height :100%;
+		z-index : -1;
+		top: 0;
+		left: 0;
+	}
+	#all,#all2,#all3{
+		text-align: center;
+		position: absolute;
+		width: 30%;
+		height: 30%;
+		left: 46.5%;
+		top: 40%;
+	}
+
+	#loginContent{
+		width: 90%;
+		height: 70%;
+	}
+	#loginContent2{
+		width: 90%;
+		height: 70%;
+	}
+	#personImage{
+		width: 7%;
+		height: 7%;
+	}
+	#lockImage{
+		width: 7%;
+		height: 7%;
+	}
+	.user{
+		display: inline-flex;
+		position: relative;
+		left: 15%;
+	}
+	.bar{
+		position: absolute;
+		width: 70%;
+		right: 15%;
+	}
+	#textForm, #textForm2,#textForm3,#textForm4{
+		width: 80%;
+		height: 100%;
+		border-style: none;
+		background-color: transparent;
+		outline: none;
+	}
+	#input{
+		position: relative;
+		bottom: 10%;
+	}
+	#input2{
+		position: relative;
+		bottom: 6%;
+	}
+	#allUserName{
+		margin-bottom: 2%;
+		margin-top: -3%;
+	}
+	#signButton, #cancelButton, #joinButton,#confirmButton{
+		border-style: none;
+		background-color: transparent;
+		outline: none;
+	}
+	#signImage{
+		width: 80%;
+		height: 20%;
+		margin-top: -3%;
+		margin-left: 2%;
+	}
+	#aTag{
+		border-style: none;
+		background-color: transparent;
+		outline: none;
+		color: black;
+		position: relative;
+		left: 1%;
+	}
+
+	#join{
+		display: inline-flex;
+
+	}
+	#signImage:hover, #cancelImage:hover, #joinImage:hover, #confirmImage:hover{
+		cursor: pointer;
+	}
+
+	#all3{
+		position: absolute;
+		margin-top: 4%;
+		font-size: x-large;
+	}
+	#confirmImage{
+		width: 80%;
+		height: 20%;
+		margin-top: 5%;
+		margin-left: 2%;
+	}
+
+#cancelImage, #joinImage{
+	width: 80%;
+	height: 20%;
+position: relative;
+}
+#createAccount:hover{
+	cursor: pointer;
+}
+	</style>
+</head>
+<body>
+	<div id="fullscreen">
+		<video autoplay loop >
+			<source src = "/images/backVideo.mp4"type = "video/mp4">
+			</video>
+		</div>
+		<div id="all">
+			<div id="memberLogin">
+				<img id="loginContent"src="/images/Asset1.png"></img>
+			</div>
+			<div id="input">
+				<div id="allUserName">
+					<div id="userName" class="user">
+						<img id="personImage"src="/images/person.png"></img>
+						<form>
+							<input id="textForm" type="text" name="text" placeholder="Username"></input>
+						</form>
+					</div>
+					<img class="bar" src="/images/Asset7.png"></img>
+				</div>
+				<div>
+					<div id="password" class="user">
+						<img id="lockImage"src="/images/locked.png"></img>
+						<form>
+							<input id="textForm2" type="password" name="text" placeholder="Password"></input>
+						</form>
+					</div>
+					<img class="bar" src="/images/Asset7.png"></img>
+				</div>
+			</div>
+			<div id="signIn">
+				<div id="sign">
+					<button id="signButton"><img id="signImage" src="/images/Asset8.png"></img></button>
+				</div>
+				<div id="signContent">
+					<button id="aTag"><p id="createAccount">Create an Account</p></button>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="all2">
+			<div id="memberLogin">
+				<img id="loginContent2"src="/images/Asset12.png"></img>
+			</div>
+			<div id="input2">
+				<div id="allUserName">
+					<div id="userName" class="user">
+						<img id="personImage"src="/images/person.png"></img>
+						<form action="input.jsp"method="post">
+							<input id="textForm3" type="text" name="text" placeholder="Username" value=""></input>
+						</form>
+					</div>
+					<img class="bar" src="/images/Asset7.png"></img>
+				</div>
+				<div>
+					<div id="password" class="user">
+						<img id="lockImage"src="/images/locked.png"></img>
+						<form>
+							<input id="textForm4" type="password" name="text" placeholder="Password"></input>
+						</form>
+					</div>
+					<img class="bar" src="/images/Asset7.png"></img>
+				</div>
+			</div>
+			<div id="signIn">
+				<div id="join">
+					<button id="cancelButton"><img id="cancelImage" src="/images/Asset21.png"></img></button>
+					<button id="joinButton"><img id="joinImage" src="/images/Asset22.png"></img></button>
+				</div>
+			</div>
+		</div>
+
+		<div id="all3">
+			<div id="userValue">
+			</div>
+			<div>
+			<button id="confirmButton"><img id="confirmImage" src="/images/ok.png"></img></button>
+			</div>
+		</div>
+	</body>
+	</html>

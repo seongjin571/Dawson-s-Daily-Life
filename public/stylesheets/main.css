@@ -1,0 +1,266 @@
+
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Jeju Gothic', serif;
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+display: none;
+}
+#allSection{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+margin-left: 18%;
+margin-right: 18%;
+}
+#middlesection1{
+    display: inline-flex;
+    width: 100%;
+    height: 50%;
+}
+#middlesection2{
+  display: inline-flex;
+  width: 100%;
+  height: 50%;
+}
+#mainPage{
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url('/images/mainImage.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.section{
+  width: 22%;
+  height:84%;
+  color: white;
+  font-size: 30px;
+  vertical-align: middle;
+  border-radius: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 40px;
+  text-align: center;
+  line-height: 290px;
+  font-family: '나눔바른고딕';
+}
+#section1{
+  background: url('/images/actImage.jpg');
+  background-size: 100% 100%;
+}
+#section2{
+  background-image: url('/images/oyrLogo.jpg');
+  background-size: 100% 100%;
+}
+#section3{
+  background-image: url('/images/applyImage.jpg');
+  background-size: 100% 100%;
+}
+#section4{
+  background-image: url('/images/note.jpg');
+  background-size: 100% 100%;
+}
+#content1{
+  width: 100%;
+  visibility:hidden;
+}
+
+#content2{
+  width: 100%;
+  display: none;
+}
+#content3{
+  width: 100%;
+  display: none;
+  font-weight: 15px;
+}
+#content4{
+  width: 100%;
+  display: none;
+  font-weight: 15px;
+}
+.moveTop:hover{
+  cursor: pointer;
+  	-webkit-transform: scale(1.15);
+  	transform: scale(1.15);
+}
+.moveTop {
+  position: fixed;
+  top: 85%;
+  right: 10px;
+  width: 5%;
+  z-index: 102;
+}
+
+#moveTop{
+  position:relative;
+}
+#applyForm{
+   font-size: 18px;
+}
+.outer {
+  /* display: table; */
+  width: 100%;
+  height: 100%;
+}
+.inner {
+  /* text-align: center; */
+  margin-top: 5%;
+  /* margin-left: 8%; */
+}
+form{
+  /* margin-left: 8%; */
+}
+#bar{
+position: absolute;
+top: 9%;
+}
+
+#applyHeadLine{
+  font-size: 50px;
+  font-family: 'Nanum Gothic Coding', serif;
+  font-weight: 600;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  position: absolute;
+    margin-top: 15%;
+
+}
+.info{
+  height: 40px;
+  width: 250px;
+  margin-bottom: 10%;
+  margin-top: 2%;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  outline: none;
+}
+.nonBoxInfo{
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  outline: none;
+}
+#applyButton{
+  /* margin-left: 40%; */
+  font-size: 17px;
+  width: 120px;
+  height:45px;
+  color: white;
+  border-color: #3899EC;
+  border-radius: 5px;
+  background-color: #3899EC;
+  border-style: solid;
+}
+#applyButton:hover{
+  cursor: pointer;
+  box-shadow: -2px 2px 16px rgba(0, 0, 0, 0.6);
+}
+#mainImage{
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/mainImage.png');
+  background-size: 100% 100%;
+}
+ .box{
+   width:100%;
+   height:100%;
+   position:relative;
+   color:#ffffff;
+   font-size:24pt;
+ }
+ .box2{
+   width:100%;
+   height:100%;
+   position:relative;
+   color:#ffffff;
+   font-size:24pt;
+ }
+ .box3{
+   width:100%;
+   height:100%;
+ }
+#box1{
+  background-image:url("/images/main.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#box2{
+  background-image:url("/images/intro.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#box3{
+  background-image:url("/images/ssn.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#box4{
+  background-image:url("/images/cir.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#box5{
+background-image:url("/images/mem.jpg");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+#box6{
+background-image:url("/images/loca.jpg");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+#box7{
+background-image:url("/images/rec.jpg");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+#act1{
+ background-image:url("/images/award.jpg");
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+}
+#act2{
+ background-image:url("/images/record.jpg");
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+}
+#act3{
+ background-image:url("/images/website.jpg");
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+}
+
+#apply1{
+  width: 100%;
+  height: 100%;
+}
+#apply2{
+  width: 100%;
+  height: 100%;
+}
+#applyForm1{
+  position: absolute;
+    left: 30%;
+    margin-top: 10%;
+}
+#applyForm2{
+  position: absolute;
+  left: 60%;
+  margin-top: 10%;
+}
+#applyForm3{
+  position: relative;
+    top: 6%;
+    text-align: center;
+}
+.one{
+  display: inline-flex;
+  width: 100%;
+  height:
+}

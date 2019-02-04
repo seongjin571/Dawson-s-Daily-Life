@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang='en'>
+<style>
+body
+{
+  cursor: crosshair;
+  font-family: Georgia, Helvetica, sans-serif;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: black;
+}
+
+#loading-image
+{
+  margin-top: 20%;
+  z-index: 100;
+ }
+#hud {
+  left: 10px;
+  position: absolute;
+  top:  10px;
+  font-size: 30px;
+  font-family: 'Courier New';
+  color: #ffffff;
+  z-index: 100;
+}
+#credits {
+  font-size: 12px;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  width: 100%;
+  z-index: 100;
+}
+
+
+#intro2{
+  background-image: url('images/screen1.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #FFFFFF;
+  font-size: 40px;
+  opacity: 0.999;
+
+  text-align: center;
+  z-index: 1001;
+}
+#intro {
+  background-image: url('images/screen2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #FFFFFF;
+  font-size: 40px;
+  opacity: 0.8;
+
+  text-align: center;
+  z-index: 1001;
+}
+.warning{
+    position: absolute;
+    left: 35%;
+    top:  10px;
+    font-size: 25px;
+    font-family: 'Courier New';
+    color: #ffffff;
+    z-index: 100;
+    opacity: 0.99;
+
+  }
+#hurt {
+  background-color: red;
+  display: none;
+  left: 0;
+  opacity: 0.15;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  z-index: 1002;
+}
+#container
+{
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#blocker
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+#status
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  font-family: 'Courier New';
+  display: -webkit-box;
+  display: -moz-box;
+  color: #ffffff;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+}
+#jewel
+{
+  padding-top: 4px;
+  width: 15%;
+  height: 15%;
+}
+#wrapper
+{
+  margin : 0 auto;
+}
+#fail{
+  background: url('/images/stage1Fail.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+#success{
+  background: url('images/stage1_1.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+#success2{
+  background: url('images/stage1_2.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+#success3{
+  background: url('images/stage1_3.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+@font-face{
+	font-family:"OTSoolaejabkiRA";
+	src: url("OTSoolaejabkiRA.woff")format("woff");
+	font-weight:normal;
+	font-style:normal;
+}
+</style>
+
+<script>
+var effect = new Audio('sound/pulmuoneSong.mp3');
+effect.volume=0.5;
+effect.play();
+</script>
+
+<head>
+  <link rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/quiz1.css">
+  <link rel="stylesheet" type="text/css" href="css/quiz2.css">
+  <meta charset="utf-8"></meta>
+</head>
+<body>
+
+  <div id="wrapper">
+  <div id='container'></div>
+  <script src='javascripts/quiz.js'></script>
+  <script src='javascripts/Three.js'></script>
+  <script src='javascripts/foodpos.js'></script>
+  <script src='javascripts/FirstPersonControls.js'></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <div id="blocker">
+  </div>
+  <div id="status">
+    <div id="Hp_Bar">
+    </div>
+    <strong id="statustext"></strong>
+  </div>
+
+  <!--<div id="loading"><img id="loading-image" src="/images/로딩3_2.gif" alt="Loading..." /></div>-->
+  <script src="javascripts/main.js"></script>
+
+</div>
+</body>
+</html>

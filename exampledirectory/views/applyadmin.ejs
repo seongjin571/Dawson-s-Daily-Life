@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <!-- 관리자용 사이트입니다. -->
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <style>
+  .applicant_container{
+    width:800px;
+    border:solid;
+    margin-bottom: 30px;
+    word-wrap: break-word;
+  }
+  </style>
+</head>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<!-- <script type='text/javascript' src='/javascripts/apply_admin.js'></script> -->
+
+<body>
+  <!-- 데이터베이스에서 값을 불러옵니다. 해당 내용은 밑에 언급이 되어있으므로 자세한 얘기는 생략하겠습니다. -->
+  <% for(var i=0; i<applicant.length;i++){ %>
+    <div class='applicant_container'>
+    <div>이름 : <%= applicant[i].name %></div>
+    <div>성별 : <%= applicant[i].gender %></div>
+    <div>군필 여부 : <%= applicant[i].military %></div>
+    <div>학과 : <%= applicant[i].major %></div>
+    <div>학번 : <%= applicant[i].student_number %></div>
+    <div>학년 : <%= applicant[i].grade %></div>
+    <div>연락처 : <%= applicant[i].phone_number %></div>
+    <div>이메일 : <%= applicant[i].email %></div>
+    <div>거주지 : <%= applicant[i].home %></div>
+    <hr>
+    <div>지원동기 : </div><br><div> <%= applicant[i].apply_reason %></div>
+    <hr>
+    <div>프로젝트 경험 : </div><br><div><%= applicant[i].project %></div>
+    <hr>
+    <div>만들고 싶은 서비스 : </div><br><div><%= applicant[i].want_service %></div>
+  </div>
+    <% } %>
+</body>
+</html>

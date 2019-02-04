@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <style>
+  body{
+    margin: 0;
+    padding: 0;
+    width : 100%;
+    height :100%;
+    background-color: black;
+    overflow: hidden;
+  }
+  video{
+    position :absolute;
+    width : 100%;
+    height :100%;
+    z-index : -1;
+    top: 0;
+    left: 0;
+  }
+    </style>
+</head>
+<body>
+  <div id="fullscreen">
+		<video id="vid"autoplay>
+			<source src = "/images/main5.mp4"type = "video/mp4">
+			</video>
+		</div>
+    <script>
+    var vid=document.getElementById('vid');
+    vid.onended=function(){
+    $('#fullscreen').animate({
+    opacity:0
+  },2500).delay(1000).animate({
+    width:300
+  });
+  // $('div').animate({
+  //   opacity:0
+  // },2500).delay(1000).animate({
+  //   width:300
+  // });
+  setInterval(function(){
+
+      location.href="http://54.70.8.39:3000/gameProject/Stage1";
+  }, 200);
+  // setInterval(function(){
+  //   if(audio.volume-0.1 >0.0 ){
+  //     audio.volume-=0.1;
+  //   }
+  //   else{
+  //     audio.pause();
+  //     location.href="game1.html";
+  //   }
+  // }, 200);
+}
+    </script>
+</body>
+</html>
